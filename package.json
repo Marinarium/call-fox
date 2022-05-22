@@ -1,0 +1,22 @@
+{
+  "name": "call-1",
+  "description": "code-examples",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "prettier":  "prettier --write '{src,tests}/**/*.js' '**/*.html' ",
+    "lint": "eslint --debug src/**/*.js",
+    "lint-write": "eslint --debug src/ --fix",
+    "prepare": "husky install",
+    "lint-check": "prettier --write src/**/*.js && eslint --debug src/**/*.js"
+  },
+  "author": "marinarium",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "prettier": "2.6.2"
+  }
+}
